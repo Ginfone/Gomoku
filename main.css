@@ -1,0 +1,70 @@
+.center{
+	position:absolute;
+	left:50%;
+	top:50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+.btnBar{
+	position:absolute;
+	right:5%;
+	top:50%;
+}
+.btn{
+	padding:10px 20px;
+	margin:0 10px;
+	background-color:#000;
+	color:#fff;
+	border:0;
+	font-size:20px;
+	cursor:pointer;
+	transition:0.3s;
+}
+.btn:focus{
+	outline: none;
+}
+.btn:active{
+	-webkit-transform: scale(0.9,0.9);
+	-ms-transform: scale(0.9,0.9);
+	transform: scale(0.9,0.9);
+}
+.mode{
+	position:absolute;
+	left:5%;
+	top:50%;
+}
+.btn-empty{
+	padding:10px 20px;
+	margin:0 10px;
+	background-color:#fff;
+	color:#000;
+	border:2px solid #000;
+	font-size:20px;
+	cursor:pointer;
+	transition:0.3s;
+}
+.active{
+	background-color:#000;
+	color:#fff;
+}
+#restart{
+	display:block;
+	margin:10% auto;
+	width:50px;
+	height:50px;
+	padding:0 0;
+	background-color:#fff;
+	color:#fff;
+	border:0;
+	font-size:20px;
+	cursor:pointer;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+#restart:hover{
+	-webkit-transform: scale(1.1,1.1);
+	-ms-transform: scale(1.1,1.1);
+	transform: scale(1.1,1.1);
+}

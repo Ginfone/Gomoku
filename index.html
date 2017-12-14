@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="main.css">
+	<title>五子棋Demo</title>
+</head>
+<body>
+	<div class='btnBar'>
+		<button id='undo' class="btn" onclick='undo()'>撤回</button>
+		<button id='redo'  class="btn" onclick='redo()'>重做</button>
+
+	</div>
+	<div class="mode">
+		<button id='pvp' class="btn-empty active" onclick='pvp()'>玩家对战</button>
+		<button id='ai' class="btn-empty" onclick='ai()'>人机对战</button>
+		<button id='restart'  onclick='refresh()'><img src='restart.svg' alt='restart' width="100%"/></button>
+	</div>
+	<canvas id='canvas' class="center" height='500px' width='500px' style="border:1px solid #000;"></canvas>
+	<script src='mode.js' type='text/javascript'></script>
+	<script src='pvp.js' type='text/javascript'></script>
+	<script>
+	function refresh(){
+		window.location.reload();
+	}
+	</script>
+</body>
+</html>
